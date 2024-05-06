@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Enhancer",
+    "version": "1.0",
+    "description": "Enhances WhatsApp Web functionality",
+   "host_permissions" : ["https://web.whatsapp.com/*",
+   "https://github.com/mukulhase/WebWhatsapp-Wrapper/blob/master/webwhatsapi/js/wapi.js"],
+    "permissions": ["activeTab", "storage"],
+    
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": 
+           "chatIcon.png"
+          
+      },
+    "content_scripts": [
+        {
+          "matches": ["https://web.whatsapp.com/*",
+          "https://github.com/mukulhase/WebWhatsapp-Wrapper/blob/master/webwhatsapi/js/wapi.js"],
+          "js": ["popup.js"]
+        }
+      ]
+ 
+  }
+  

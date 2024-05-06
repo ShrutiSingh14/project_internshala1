@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWhatsApp Enhancer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>MyWhatsApp Enhancer</h2>
+        <div class="content-wrapper">
+            <div class="button-group filter-chats">
+                <h3>Filter Chats</h3>
+                <button id="filter-all">All Chats</button>
+                <button id="filter-unread">Unread Chats</button>
+                <button id="filter-awaiting-reply">Awaiting Reply</button>
+                <button id="filter-needs-reply">Needs Reply</button>
+            </div>
+            <div class="button-group">
+                <h3>Create Custom Filter</h3>
+                <button id="create-custom-filter">Create Custom Filter</button>
+            </div>
+            <div>
+                <h3>Save Contact Details and Notes</h3>
+                <input type="text" id="contact-name" placeholder="Contact Name">
+                <br></br>
+                <textarea id="contact-notes" placeholder="Notes"></textarea>
+                <button id="save-contact-details">Save Contact Details</button>
+            </div>
+            
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="modal-contact-name" placeholder="Contact Name">
+            <textarea id="modal-contact-notes" placeholder="Notes"></textarea>
+            <button id="modal-save-contact">Save</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
